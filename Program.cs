@@ -24,17 +24,19 @@
 // 82 -> 10
 // 9012 -> 12
 
-
-
-
-
-
-
-
-
-
-
-
+// void SummOfDigits()
+// {
+//     System.Console.WriteLine("Enter number: ");
+//     int a = int.Parse(Console.ReadLine());
+//     int sum = 0;
+//     while (a > 0)
+//     {
+//     sum = sum + a % 10;
+//     a = a / 10;
+//     }
+//     Console.WriteLine(sum);
+// }
+// SummOfDigits();
 
 
 // Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
