@@ -43,10 +43,31 @@
 // 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 // 6, 1, 33 -> [6, 1, 33]
 
-// int[] Array = new int;
+// Не совсем понял почему в задаче массив из 8 элементов, а пример ответа из 5 и 3 чисел. Также не понятно числа должны быть рандомные или нет, на всякий случай сделаю две версии:
+// Первая-вывод массива из 8 случайных чисел 
+
+// int[] Array = new int[8];
 //     Random rnd = new Random();
+//     Console.WriteLine("Вывод массива:");
 //     for (int i = 0; i < Array.Length; i++)
 //     {
-//         Array[i] = rnd.Next(0,2);
+//         Array[i] = rnd.Next(0,100);
 //         Console.Write($"{Array[i]}, ");
 //     }
+
+// Вторая-вывод массива из указанных в ответе чисел
+
+Console.WriteLine("Enter number of elements in array: ");
+int count = int.Parse(Console.ReadLine());
+int[] Array = new int[count];
+
+for (int i = 0; i < Array.Length; i++)
+{
+Console.WriteLine($"Enter number in index {i}: ");
+Array[i] = int.Parse(Console.ReadLine());
+}
+
+for (int i = 0; i < Array.Length; i++)
+{
+    System.Console.Write($"{Array[i]}, ");
+}
